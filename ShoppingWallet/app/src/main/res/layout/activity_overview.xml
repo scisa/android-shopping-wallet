@@ -17,8 +17,6 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/overview_bottom_navigation"
         android:layout_width="match_parent"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
-        app:itemTextColor="@drawable/bottom_navigation_color_selector"
         app:menu="@menu/overview_menu"
         android:layout_height="wrap_content">
     </com.google.android.material.bottomnavigation.BottomNavigationView>

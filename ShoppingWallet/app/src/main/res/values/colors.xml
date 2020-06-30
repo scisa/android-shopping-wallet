@@ -20,10 +20,10 @@
 
 
 <!--    Green Light Theme-->
-    <color name="colorPrimaryGreenLightTheme">#006064</color>
-    <color name="colorPrimaryVariantGreenLightTheme">#004D40</color>
-    <color name="colorSecondaryGreenLightTheme">#FF6F00</color>
-    <color name="colorSecondaryVariantGreenLightTheme">#FF6F00</color>
+    <color name="colorPrimaryGreenLightTheme">#27c96d</color>
+    <color name="colorPrimaryVariantGreenLightTheme">#00af47</color>
+    <color name="colorSecondaryGreenLightTheme">#c92783</color>
+    <color name="colorSecondaryVariantGreenLightTheme">#8b2270</color>
 
 
 <!--    Red Dark Theme-->
@@ -63,4 +63,8 @@
     <color name="colorSecondaryFancyNerdTheme">#FF6F00</color>
     <color name="colorSecondaryVariantFancyNerdTheme">#FF6F00</color>
 
+
+<!--    Light Themes colors-->
+    <color name="colorButtonTextColor">#635E5E</color>
+    <color name="darkerWhite">#ececec</color>
 </resources>
