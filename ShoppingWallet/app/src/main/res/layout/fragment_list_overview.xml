@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_history_list_title_id"
+            android:layout_width="match_parent"
+            android:text="@string/list_overview_title_text"
+            android:textSize="28sp"
+            android:layout_marginVertical="@dimen/vertical_margin"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_overview"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/overview_overview_elem"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_new_list_item"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_add"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_height="wrap_content">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

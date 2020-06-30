@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    Blue Dark Theme-->
+    <color name="colorPrimaryBlueDarkTheme">#1976D2</color>
+    <color name="colorPrimaryVariantBlueDarkTheme">#0D47A1</color>
+    <color name="colorSecondaryBlueDarkTheme">#f3b04b</color>
+    <color name="colorSecondaryVariantBlueDarkTheme">#ee9002</color>
+
+<!--    Blue Light Theme-->
+    <color name="colorPrimaryBlueLightTheme">#1976D2</color>
+    <color name="colorPrimaryVariantBlueLightTheme">#0D47A1</color>
+    <color name="colorSecondaryBlueLightTheme">#f3b04b</color>
+    <color name="colorSecondaryVariantBlueLightTheme">#ee9002</color>
+
+<!--    Green Dark Theme-->
+    <color name="colorPrimaryGreenDarkTheme">#27c96d</color>
+    <color name="colorPrimaryVariantGreenDarkTheme">#00af47</color>
+    <color name="colorSecondaryGreenDarkTheme">#c92783</color>
+    <color name="colorSecondaryVariantGreenDarkTheme">#8b2270</color>
+
+
+<!--    Green Light Theme-->
+    <color name="colorPrimaryGreenLightTheme">#006064</color>
+    <color name="colorPrimaryVariantGreenLightTheme">#004D40</color>
+    <color name="colorSecondaryGreenLightTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantGreenLightTheme">#FF6F00</color>
+
+
+<!--    Red Dark Theme-->
+    <color name="colorPrimaryRedDarkTheme">#006064</color>
+    <color name="colorPrimaryVariantRedDarkTheme">#004D40</color>
+    <color name="colorSecondaryRedDarkTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantRedDarkTheme">#FF6F00</color>
+
+
+<!--    Red Light Theme-->
+    <color name="colorPrimaryRedLightTheme">#006064</color>
+    <color name="colorPrimaryVariantRedLightTheme">#004D40</color>
+    <color name="colorSecondaryRedLightTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantRedLightTheme">#FF6F00</color>
+
+<!--    Material Grey-->
+    <color name="colorPrimaryMaterialGreyTheme">#006064</color>
+    <color name="colorPrimaryVariantMaterialGreyTheme">#004D40</color>
+    <color name="colorSecondaryMaterialGreyTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantMaterialGreyTheme">#FF6F00</color>
+
+<!--    Black and White-->
+    <color name="colorPrimaryBlackWhiteTheme">#006064</color>
+    <color name="colorPrimaryVariantBlackWhiteTheme">#004D40</color>
+    <color name="colorSecondaryBlackWhiteTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantBlackWhiteTheme">#FF6F00</color>
+
+    <!--    White and Black-->
+    <color name="colorPrimaryWhiteBlackTheme">#006064</color>
+    <color name="colorPrimaryVariantWhiteBlackTheme">#004D40</color>
+    <color name="colorSecondaryWhiteBlackTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantWhiteBlackTheme">#FF6F00</color>
+
+<!--    Fancy Nerd-->
+    <color name="colorPrimaryFancyNerdTheme">#006064</color>
+    <color name="colorPrimaryVariantDarkFancyNerdTheme">#004D40</color>
+    <color name="colorSecondaryFancyNerdTheme">#FF6F00</color>
+    <color name="colorSecondaryVariantFancyNerdTheme">#FF6F00</color>
+
+</resources>

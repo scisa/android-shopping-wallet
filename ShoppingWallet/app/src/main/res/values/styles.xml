@@ -1,0 +1,105 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="BlueDarkTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+
+        <item name="android:textViewStyle">@style/BlueDarkTheme.TextView</item>
+        <item name="android:buttonStyle">@style/BlueDarkTheme.Button</item>
+        <item name="materialButtonStyle">@style/BlueDarkTheme.Button</item>
+        <item name="bottomNavigationStyle">@style/BlueDarkTheme.ButtomNavigationView</item>
+    </style>
+
+    <style name="BlueDarkTheme.TextView">
+        <item name="android:textColor">@color/colorPrimaryBlueDarkTheme</item>
+    </style>
+    
+    <style name="BlueDarkTheme.Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BlueDarkTheme.ButtomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlayBottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlayBottomNavigationView" parent="">
+        <item name="colorPrimary">@color/colorSecondaryBlueDarkTheme</item>
+    </style>
+
+    <style name="BlueDarkTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BlueLightTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueLightTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueLightTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueLightTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueLightTheme</item>
+    </style>
+
+    <style name="GreenDarkTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/colorPrimaryGreenDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantGreenDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryGreenDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantGreenDarkTheme</item>
+    </style>
+
+    <style name="GreenLightTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+
+    <style name="RedDarkTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+
+    <style name="RedLightTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+
+    <style name="MaterialGrey" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+
+    <style name="BlackWhite" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+
+    <style name="WhiteBlack" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+
+    <style name="FancyNerd" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimaryBlueDarkTheme</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlueDarkTheme</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueDarkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueDarkTheme</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_overview_id"
+            android:title="@string/historyoverview_menu_text"
+            android:icon="@drawable/ic_baseline_format_list_bulleted"
+            app:showAsAction="ifRoom"/>
+
+        <item android:id="@+id/menu_trash_id"
+            android:title="@string/history_trash_menu_title_text"
+            android:icon="@drawable/ic_baseline_trash_bin"
+            app:showAsAction="ifRoom"/>
+    </group>
+</menu>

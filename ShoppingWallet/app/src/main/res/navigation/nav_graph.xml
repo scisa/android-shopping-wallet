@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/OverviewFragment">
+
+    <fragment
+        android:id="@+id/OverviewFragment"
+        android:name="de.chsc.shoppinghistory.ui.fragments.OverviewFragment"
+        android:label="@string/overview_fragment_label"
+        tools:layout="@layout/fragment_list_overview">
+
+        <action
+            android:id="@+id/action_OverviewFragment_TrashFragment"
+            app:destination="@id/TrashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TrashFragment"
+        android:name="de.chsc.shoppinghistory.ui.fragments.TrashFragment"
+        android:label="@string/trash_fragment_label"
+        tools:layout="@layout/fragment_trash">
+
+        <action
+            android:id="@+id/action_TrashFragment_OverviewFragment"
+            app:destination="@id/OverviewFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="de.chsc.shoppinghistory.ui.activities.HistoryActivity">
+
+    <TextView
+        android:id="@+id/tv_history_list_title_id"
+        android:layout_width="match_parent"
+        android:text="@string/app_name"
+        android:textSize="28sp"
+        android:layout_marginVertical="@dimen/vertical_margin"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+    </TextView>
+
+<!--    android:textColor="@color/colorPrimaryBlueDarkTheme"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/image_button_previous_month"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/vertical_margin"
+            android:padding="@dimen/vertical_margin"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/move_to_previous_month_content_description">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_history_year_month_name_id"
+            android:layout_width="match_parent"
+            android:text="@string/app_name"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="@dimen/vertical_margin"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+<!--        android:textColor="@color/colorSecondaryBlueDarkTheme"-->
+
+        <ImageButton
+            android:id="@+id/image_button_next_month"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/vertical_margin"
+            android:padding="@dimen/vertical_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/move_to_next_month_content_description">
+        </ImageButton>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history_list_recycler_view_id"
+        tools:listitem="@layout/history_item"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/vertical_margin"
+        android:layout_width="match_parent">
+    </View>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_history_price_id"
+                android:layout_width="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_marginVertical="@dimen/vertical_margin"
+                android:layout_marginStart="@dimen/vertical_margin"
+                android:paddingHorizontal="@dimen/vertical_margin"
+                android:layout_height="wrap_content">
+            </TextView>
+<!--            android:textColor="@color/colorSecondaryBlueDarkTheme"-->
+
+            <TextView
+                android:id="@+id/tv_history_price_currency"
+                android:layout_width="wrap_content"
+                android:text="@string/euro_sign"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/tv_history_price_id"
+                android:layout_marginVertical="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/vertical_margin"
+                android:layout_height="wrap_content">
+            </TextView>
+<!--            android:textColor="@color/colorSecondaryBlueDarkTheme"-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_new_history_entry"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_baseline_add"
+                android:layout_margin="@dimen/vertical_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap">
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>
