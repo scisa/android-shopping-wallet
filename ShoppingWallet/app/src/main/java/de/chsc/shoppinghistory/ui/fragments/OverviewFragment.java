@@ -21,7 +21,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.List;
 
 import de.chsc.shoppinghistory.R;
-import de.chsc.shoppinghistory.adapter.RecyclerOverviewAdapter;
+import de.chsc.shoppinghistory.interfaces.OnOverviewListItemDoListener;
+import de.chsc.shoppinghistory.ui.adapter.RecyclerOverviewAdapter;
 import de.chsc.shoppinghistory.model.ListItem;
 import de.chsc.shoppinghistory.model.ShoppingHistoryViewModel;
 import de.chsc.shoppinghistory.ui.activities.HistoryActivity;
@@ -66,7 +67,7 @@ public class OverviewFragment extends Fragment {
     }
 
     private void listenToEventsFromRecyclerView(){
-        this.rvAdapter.setOnSetDeleteClicked(new RecyclerOverviewAdapter.onItemDoListener() {
+        this.rvAdapter.setOnOverviewListItemDoListener(new OnOverviewListItemDoListener() {
             @Override
             public void onSetDeleteClicked(ListItem listItem) {
                 movedItemToTrash(listItem);

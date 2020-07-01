@@ -1,11 +1,10 @@
-package de.chsc.shoppinghistory.adapter;
+package de.chsc.shoppinghistory.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,10 +13,11 @@ import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import de.chsc.shoppinghistory.R;
+import de.chsc.shoppinghistory.interfaces.OnOverviewListItemDoListener;
 import de.chsc.shoppinghistory.model.ListItem;
 
 public class RecyclerOverviewAdapter extends ListAdapter<ListItem, RecyclerOverviewAdapter.ViewHolder> {
-    private onItemDoListener listener;
+    private OnOverviewListItemDoListener listener;
 
     public RecyclerOverviewAdapter(Context context) {
         super(DIFF_CALLBACK);
@@ -100,13 +100,8 @@ public class RecyclerOverviewAdapter extends ListAdapter<ListItem, RecyclerOverv
         }
     }
 
-    public interface onItemDoListener{
-        void onSetDeleteClicked(ListItem listItem);
-        void onSetEditClicked(ListItem listItem);
-        void onSetItemViewClicked(ListItem listItem);
-    }
 
-    public void setOnSetDeleteClicked(onItemDoListener listener){
+    public void setOnOverviewListItemDoListener(OnOverviewListItemDoListener listener){
         this.listener = listener;
     }
 }

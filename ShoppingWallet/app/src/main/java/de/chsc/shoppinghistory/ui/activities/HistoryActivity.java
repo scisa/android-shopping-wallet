@@ -9,13 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +19,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.List;
 
 import de.chsc.shoppinghistory.R;
-import de.chsc.shoppinghistory.adapter.RecyclerHistoryAdapter;
+import de.chsc.shoppinghistory.interfaces.OnHistoryItemDoListener;
+import de.chsc.shoppinghistory.ui.adapter.RecyclerHistoryAdapter;
 import de.chsc.shoppinghistory.model.HistoryItem;
 import de.chsc.shoppinghistory.model.ListItem;
 import de.chsc.shoppinghistory.model.ShoppingHistoryViewModel;
@@ -177,7 +172,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     private void handleRecyclerViewClicks(){
-        this.rvAdapter.setOnItemSelectedListener(new RecyclerHistoryAdapter.OnItemSelectedListener() {
+        this.rvAdapter.setOnHistoryItemDoListener(new OnHistoryItemDoListener() {
             @Override
             public void onViewPressed(HistoryItem historyItem) {
                 addNewEditHistoryItemDialog(historyItem);

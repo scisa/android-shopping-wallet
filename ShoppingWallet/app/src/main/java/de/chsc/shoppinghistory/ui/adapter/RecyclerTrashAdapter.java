@@ -1,4 +1,4 @@
-package de.chsc.shoppinghistory.adapter;
+package de.chsc.shoppinghistory.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,11 +13,12 @@ import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import de.chsc.shoppinghistory.R;
+import de.chsc.shoppinghistory.interfaces.OnTrashListItemDoListener;
 import de.chsc.shoppinghistory.model.ListItem;
 
 public class RecyclerTrashAdapter extends ListAdapter<ListItem, RecyclerTrashAdapter.ViewHolder> {
 
-    private onItemDoListener listener;
+    private OnTrashListItemDoListener listener;
 
     public RecyclerTrashAdapter(Context context) {
         super(DIFF_CALLBACK);
@@ -91,12 +92,7 @@ public class RecyclerTrashAdapter extends ListAdapter<ListItem, RecyclerTrashAda
         }
     }
 
-    public interface onItemDoListener{
-        void onDeleteClicked(ListItem listItem);
-        void onItemRestore(ListItem listItem);
-    }
-
-    public void setOnItemDoListener(onItemDoListener listener){
+    public void setOnTrashListItemDoListener(OnTrashListItemDoListener listener){
         this.listener = listener;
     }
 }

@@ -27,8 +27,19 @@
             <TextView
                 android:id="@+id/tv_product_price_id"
                 android:layout_width="wrap_content"
-                android:layout_margin="@dimen/vertical_margin"
+                android:layout_marginVertical="@dimen/vertical_margin"
+                android:layout_marginStart="@dimen/vertical_margin"
                 android:text="@string/app_name"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/tv_product_price_currency"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_product_price_currency"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/vertical_margin"
+                android:text="@string/euro_sign"
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:layout_height="wrap_content">

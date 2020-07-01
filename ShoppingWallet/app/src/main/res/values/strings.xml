@@ -1,7 +1,9 @@
 <resources>
     <string-array name="theme_array">
-        <item>Material Dark</item>
-        <item>Material Light</item>
+        <item>Blue Dark Theme</item>
+        <item>Blue Light Theme</item>
+        <item>Green Dark Theme</item>
+        <item>Green Light Theme</item>
     </string-array>
 
 
@@ -48,4 +50,6 @@
     <string name="move_to_previous_month_content_description">move to previous month</string>
     <string name="move_to_next_month_content_description">move to next month</string>
     <string name="menu_settings_title">Settings</string>
+    <string name="select_a_theme_title">Select a Theme</string>
+    <string name="settings_title">Settings</string>
 </resources>

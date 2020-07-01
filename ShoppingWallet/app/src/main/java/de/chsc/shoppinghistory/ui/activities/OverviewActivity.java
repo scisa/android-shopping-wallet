@@ -13,10 +13,7 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import de.chsc.shoppinghistory.R;
-import de.chsc.shoppinghistory.adapter.OverviewViewPager2FragmentAdapter;
-import de.chsc.shoppinghistory.model.ShoppingHistoryViewModel;
-import de.chsc.shoppinghistory.ui.fragments.OverviewFragment;
-import de.chsc.shoppinghistory.ui.fragments.TrashFragment;
+import de.chsc.shoppinghistory.ui.adapter.OverviewViewPager2FragmentAdapter;
 import de.chsc.shoppinghistory.util.GlobalConstants;
 
 public class OverviewActivity extends AppCompatActivity {

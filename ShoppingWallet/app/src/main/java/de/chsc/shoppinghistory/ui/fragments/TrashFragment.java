@@ -19,7 +19,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import de.chsc.shoppinghistory.R;
-import de.chsc.shoppinghistory.adapter.RecyclerTrashAdapter;
+import de.chsc.shoppinghistory.interfaces.OnTrashListItemDoListener;
+import de.chsc.shoppinghistory.ui.adapter.RecyclerTrashAdapter;
 import de.chsc.shoppinghistory.model.ListItem;
 import de.chsc.shoppinghistory.model.ShoppingHistoryViewModel;
 import de.chsc.shoppinghistory.ui.dialog.DeleteForeverEmptyTrashConfirmationDialog;
@@ -87,7 +88,7 @@ public class TrashFragment extends Fragment {
     }
 
     private void listenToEventsFromRecyclerView(){
-        this.rvAdapter.setOnItemDoListener(new RecyclerTrashAdapter.onItemDoListener() {
+        this.rvAdapter.setOnTrashListItemDoListener(new OnTrashListItemDoListener() {
             @Override
             public void onDeleteClicked(ListItem listItem) {
                 deleteListItemForever(listItem);

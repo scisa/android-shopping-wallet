@@ -1,4 +1,4 @@
-package de.chsc.shoppinghistory.adapter;
+package de.chsc.shoppinghistory.ui.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

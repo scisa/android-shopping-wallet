@@ -1,4 +1,4 @@
-package de.chsc.shoppinghistory.adapter;
+package de.chsc.shoppinghistory.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,12 +12,13 @@ import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import de.chsc.shoppinghistory.R;
+import de.chsc.shoppinghistory.interfaces.OnHistoryItemDoListener;
 import de.chsc.shoppinghistory.model.HistoryItem;
 import de.chsc.shoppinghistory.util.ConstantUtilities;
 import de.chsc.shoppinghistory.util.HistoryTimestamp;
 
 public class RecyclerHistoryAdapter extends ListAdapter<HistoryItem, RecyclerHistoryAdapter.ViewHolder> {
-    private OnItemSelectedListener listener;
+    private OnHistoryItemDoListener listener;
 
     public RecyclerHistoryAdapter() {
         super(DIFF_CALLBACK);
@@ -99,11 +100,8 @@ public class RecyclerHistoryAdapter extends ListAdapter<HistoryItem, RecyclerHis
         }
     }
 
-    public interface OnItemSelectedListener{
-        void onViewPressed(HistoryItem historyItem);
-    }
 
-    public void setOnItemSelectedListener(OnItemSelectedListener listener){
+    public void setOnHistoryItemDoListener(OnHistoryItemDoListener listener){
         this.listener = listener;
     }
 
