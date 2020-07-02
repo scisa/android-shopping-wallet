@@ -10,4 +10,8 @@ public class GlobalConstants {
 
     // Request Codes
     public static final int REQUEST_CODE_SETTINGS = 1;
+
+    // Shared Preferences
+    public static final String SHARED_PREFERENCES_FILENAME = "de.chsc.shoppinghistory.sharedPreferencesSettings";
+    public static final String SHARED_PREFERENCES_THEME_KEY = "sharedPreferencesThemeKey";
 }

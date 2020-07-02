@@ -6,6 +6,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -13,6 +14,8 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import de.chsc.shoppinghistory.R;
+import de.chsc.shoppinghistory.settings.Preferences;
+import de.chsc.shoppinghistory.settings.Theme;
 import de.chsc.shoppinghistory.ui.adapter.OverviewViewPager2FragmentAdapter;
 import de.chsc.shoppinghistory.util.GlobalConstants;
 
@@ -24,7 +27,11 @@ public class OverviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Preferences preferences = new Preferences(this);
+        int themeRessource = preferences.loadThemeSettings().getRessourceId();
+        this.setTheme(themeRessource);
         setContentView(R.layout.activity_overview);
+
         this.initViews();
         this.initViewPager();
         this.initBottomNavigationView();
@@ -49,11 +56,9 @@ public class OverviewActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.menu_overview_id:
                         viewPager2Overview.setCurrentItem(0);
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.fcv_fragment_overview, new OverviewFragment()).commit();
                         break;
                     case R.id.menu_trash_id:
                         viewPager2Overview.setCurrentItem(1);
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.fcv_fragment_overview, new TrashFragment()).commit();
                         break;
                 }
                 return true;
@@ -104,4 +109,5 @@ public class OverviewActivity extends AppCompatActivity {
         }
         return true;
     }
+
 }

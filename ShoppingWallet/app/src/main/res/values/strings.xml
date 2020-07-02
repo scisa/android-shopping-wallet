@@ -52,4 +52,5 @@
     <string name="menu_settings_title">Settings</string>
     <string name="select_a_theme_title">Select a Theme</string>
     <string name="settings_title">Settings</string>
+    <string name="settings_require_restart">To apply changes you have to restart the app.</string>
 </resources>

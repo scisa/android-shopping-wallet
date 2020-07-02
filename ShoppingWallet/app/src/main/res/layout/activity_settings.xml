@@ -18,6 +18,16 @@
         android:layout_height="wrap_content">
     </TextView>
 
+    <TextView
+        android:id="@+id/tv_settings_info"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/settings_require_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

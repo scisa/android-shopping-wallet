@@ -20,6 +20,7 @@ import java.util.List;
 
 import de.chsc.shoppinghistory.R;
 import de.chsc.shoppinghistory.interfaces.OnHistoryItemDoListener;
+import de.chsc.shoppinghistory.settings.Preferences;
 import de.chsc.shoppinghistory.ui.adapter.RecyclerHistoryAdapter;
 import de.chsc.shoppinghistory.model.HistoryItem;
 import de.chsc.shoppinghistory.model.ListItem;
@@ -52,6 +53,9 @@ public class HistoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Preferences preferences = new Preferences(this);
+        int themeRessource = preferences.loadThemeSettings().getRessourceId();
+        this.setTheme(themeRessource);
         setContentView(R.layout.activity_history);
 
         this.initRecyclerView();
