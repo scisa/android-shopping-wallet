@@ -5,10 +5,11 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 
 import de.chsc.shoppinghistory.R;
+import de.chsc.shoppinghistory.interfaces.CurrencySettingsSetter;
 import de.chsc.shoppinghistory.interfaces.ThemeSettingsSetter;
 import de.chsc.shoppinghistory.util.GlobalConstants;
 
-public class Preferences implements ThemeSettingsSetter {
+public class Preferences implements ThemeSettingsSetter, CurrencySettingsSetter {
     private Context context;
     public Preferences(Context context) {
         this.context = context;
@@ -36,4 +37,13 @@ public class Preferences implements ThemeSettingsSetter {
     }
 
 
+    @Override
+    public Currency loadCurrencySettings() {
+        return null;
+    }
+
+    @Override
+    public void safeCurrencySettings(String currency) {
+
+    }
 }

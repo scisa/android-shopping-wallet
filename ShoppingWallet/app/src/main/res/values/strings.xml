@@ -6,6 +6,11 @@
         <item>Green Light Theme</item>
     </string-array>
 
+    <string-array name="currency_array">
+        <item>Euro</item>
+        <item>Dollar</item>
+    </string-array>
+
 
     <string name="app_name">ShoppingHistory</string>
     <string name="historyoverview_menu_text">History Overview</string>
@@ -53,4 +58,10 @@
     <string name="select_a_theme_title">Select a Theme</string>
     <string name="settings_title">Settings</string>
     <string name="settings_require_restart">To apply changes you have to restart the app.</string>
+    <string name="menu_share_title">share</string>
+    <string name="share_msg">ShoppingWallet recognized that I spent {0} {1} in {2}.</string>
+    <string name="change_currency_title">Change Currency</string>
+    <string name="example_currency_mapping">1 €</string>
+    <string name="is_equal">=</string>
+    <string name="button_apply">apply</string>
 </resources>

@@ -8,7 +8,11 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -16,6 +20,7 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.text.MessageFormat;
 import java.util.List;
 
 import de.chsc.shoppinghistory.R;
@@ -234,4 +239,37 @@ public class HistoryActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    private String createShareText(){
+        String msg = MessageFormat.format(getString(R.string.share_msg),
+                this.priceOfMonth, getString(R.string.euro_sign), this.currentDate.getHistoryTimeStamp());
+        return msg;
+    }
+
+    private void shareMonth(){
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, this.createShareText());
+        shareIntent.setType("text/plain");
+        startActivity(shareIntent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.history_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu_share:
+                this.shareMonth();
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+        return true;
+    }
 }

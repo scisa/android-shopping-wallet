@@ -27,6 +27,9 @@ public class HistoryItem {
     @ColumnInfo(name = DatabaseConstants.HISTORY_ITEM_TABLE_PRICE)
     private double price;
 
+//    @ColumnInfo(name = DatabaseConstants.HISTORY_ITEM_TABLE_PRICE_CURRENCY)
+//    private String currency;
+
     @ColumnInfo(name = DatabaseConstants.HISTORY_ITEM_TABLE_DATE_YEAR)
     private int year;
 
@@ -73,6 +76,14 @@ public class HistoryItem {
     public void setPrice(double price) {
         this.price = price;
     }
+
+//    public String getCurrency() {
+//        return currency;
+//    }
+//
+//    public void setCurrency(String currency) {
+//        this.currency = currency;
+//    }
 
     public int getYear() {
         return year;

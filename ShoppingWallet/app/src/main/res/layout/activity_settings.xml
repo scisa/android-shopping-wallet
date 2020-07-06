@@ -28,15 +28,36 @@
         android:layout_height="wrap_content">
     </TextView>
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/theme_settings_container"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        </androidx.fragment.app.FragmentContainerView>
-    </FrameLayout>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/theme_settings_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.fragment.app.FragmentContainerView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/currency_settings_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.fragment.app.FragmentContainerView>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

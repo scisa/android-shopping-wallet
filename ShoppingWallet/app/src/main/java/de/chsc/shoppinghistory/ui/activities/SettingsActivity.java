@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import de.chsc.shoppinghistory.R;
 import de.chsc.shoppinghistory.settings.Preferences;
+import de.chsc.shoppinghistory.ui.fragments.CurrencySettingsFragment;
 import de.chsc.shoppinghistory.ui.fragments.ThemeSettingsFragment;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -23,6 +24,9 @@ public class SettingsActivity extends AppCompatActivity {
     private void initFragments(){
         this.getSupportFragmentManager().beginTransaction().replace(R.id.theme_settings_container,
                 new ThemeSettingsFragment()).commit();
+
+        this.getSupportFragmentManager().beginTransaction().replace(R.id.currency_settings_container,
+                new CurrencySettingsFragment()).commit();
     }
 
 }

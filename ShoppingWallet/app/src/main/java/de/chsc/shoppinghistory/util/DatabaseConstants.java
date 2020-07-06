@@ -17,6 +17,7 @@ public class DatabaseConstants {
     public static final String HISTORY_ITEM_TABLE_PRODUCT_NAME = "product_name";
     public static final String HISTORY_ITEM_TABLE_MARKET_NAME = "market_name";
     public static final String HISTORY_ITEM_TABLE_PRICE = "price";
+    public static final String HISTORY_ITEM_TABLE_PRICE_CURRENCY = "currency";
     public static final String HISTORY_ITEM_TABLE_DATE_YEAR = "year";
     public static final String HISTORY_ITEM_TABLE_DATE_MONTH = "month";
     public static final String HISTORY_ITEM_TABLE_DATE_DAY_OF_MONTH = "day_of_month";
